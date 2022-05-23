@@ -1,0 +1,144 @@
+.contact {
+  width: 100%;
+  flex: 1;
+  flex-direction: column;
+}
+
+.contact__form {
+  margin: 4rem 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 500px;
+  border-radius: 2px;
+  background-color: #e6e6e6;
+  padding: 2rem 4rem;
+
+  form {
+    width: 100%;
+  }
+
+  input,
+  textarea {
+    margin: 0.5rem 0 1rem;
+    width: 100%;
+    border: 2px solid transparent;
+    border-left: 10px solid var(--gray-color);
+    border-bottom: 2px solid var(--gray-color);
+    background-color: var(--white-color);
+    padding: 0.5rem;
+
+    font-size: 1rem;
+    color: var(--black-color);
+
+    &:focus {
+      border: 2px solid var(--black-color);
+      border-left: 10px solid var(--black-color);
+    }
+  }
+
+  button {
+    margin-top: 1rem;
+    border-radius: 2px;
+    border: 2px solid var(--black-color);
+    background-color: transparent;
+    padding: 0.5rem 1rem;
+
+    cursor: pointer;
+    font-weight: 700;
+    color: var(--black-color);
+
+    &:hover {
+      background-color: var(--black-color);
+      color: var(--white-color);
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    padding: 2rem 2rem;
+  }
+
+  @media screen and (max-width: 900px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 2000px) {
+    margin-top: 8rem;
+    width: 1000px;
+    padding: 4rem 8rem;
+
+    input,
+    textarea {
+      margin: 1rem 0 2rem;
+      border: 4px solid transparent;
+      border-left: 20px solid var(--gray-color);
+      border-bottom: 4px solid var(--gray-color);
+      padding: 1rem;
+
+      font-size: 1.75rem;
+
+      &:focus {
+        border: 4px solid var(--black-color);
+        border-left: 20px solid var(--black-color);
+      }
+    }
+
+    button {
+      margin-top: 2rem;
+      border: 4px solid var(--black-color);
+      padding: 1rem 2rem;
+    }
+  }
+}
+
+.contact__label {
+  margin-left: 0.7rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  label {
+    color: var(--gray-color);
+  }
+
+  @media screen and (min-width: 2000px) {
+    margin-left: 1.4rem;
+  }
+}
+
+.contact__submitted {
+  margin: 4rem 0 2rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2px;
+  background-color: #e6e6e6;
+  padding: 2rem 4rem;
+
+  img {
+    margin-bottom: 3rem;
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    color: var(--gray-color);
+  }
+
+  @media screen and (min-width: 2000px) {
+    margin-top: 8rem;
+    padding: 4rem 8rem;
+
+    img {
+      margin-bottom: 6rem;
+    }
+
+    h2 {
+      font-size: 4rem;
+    }
+  }
+}
